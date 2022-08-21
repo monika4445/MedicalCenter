@@ -1,0 +1,35 @@
+<body>
+    
+    <div class="center">
+
+    <h1>Login Page</h1>
+    <form action="/auth/login" method="post">
+        <div class="boxes">
+        <label for="email">Email</label><br>
+        <input type="email" name="email"><br>
+        </div>
+        <div class="boxes">
+        <label for="password">Password</label><br>
+        <input type="password" name="password"><br>
+        </div>  
+        <p></p>
+        <div class="boxes">
+            <input type="submit" value="Log In">
+        </div>
+    </form>
+
+    
+
+        <% 
+            if(typeof errors !== "undefined") {
+                errors.forEach((error) => {
+        %>
+                    <div style="color: red"> <%= errors%></div>
+        <%
+                })
+            }
+        %>
+        
+    </div>
+</body>
+

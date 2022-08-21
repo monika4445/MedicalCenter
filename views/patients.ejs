@@ -1,0 +1,21 @@
+<body>
+    <section class="doctors" id="doctors">
+    <div class="box-container"></div>
+
+    <div> <h1> <%= data %> </h1></div>
+
+<% 
+    if(patient) {
+        patient.forEach((pt) => {
+        if(pt !== "undefined"){
+%>
+            <div> <%= pt %></div>
+<%
+        }})
+    }
+%>
+
+</div>
+</section>
+</body>
+

@@ -1,0 +1,384 @@
+
+<body>
+    <div class="center">
+
+        <h1>Registration</h1>
+    <form action="/auth/register" method="post">
+    <div class="boxes">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" required="required" id="name"><br>
+    </div>
+    <div class="boxes">
+        <label for="surname">Surname</label><br>
+        <input type="text" name="surname" required="required" id="surname"><br>
+    </div>
+    <div class="boxes">
+        <label for="email">Email</label><br>
+        <input type="email" name="email" required="required" id="email"><br>
+    </div>
+    <div class="boxes">
+        <label for="password">Password</label><br>
+        <input type="password" name="password" required="required"  id="password"><br>
+    </div>
+
+    <div class="boxes">
+        <label for="position"><h3>Position</h3></label>
+    <select name="position" id="position" placeholder="Position" required>
+        <option value="1">Epidemiologist</option>
+        <option value="2">Podiatrist</option>
+        <option value="3">Oncologist</option>
+        <option value="4">Pediatrician</option>
+        <option value="5">General practitioner</option>
+        <option value="6">Obstetrics and gynecology physician</option>
+        <option value="7">Otolaryngologist/ENT specialist</option>
+    </select>
+</div>
+
+<label><h2>Monday:</h2></label>
+<select name="from1"  id="from1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9" selected>9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="fromM1"  id="fromM1">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="fromAP1"  id="fromAP1">
+    <option value=" AM" selected>AM</option>
+    <option value=" PM">PM</option>
+</select>
+
+<label>to</label>
+<select name="toH1"  id="toH1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="toM1"  id="toM1">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="toAP1"  id="toAP1">
+    <option value=" AM">AM</option>
+    <option value=" PM" selected>PM</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Non Work Day</span></font>
+
+
+
+<label><h2>Tuesday:</h2></label>
+<select name="from2"  id="from2">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9" selected>9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="fromM2"  id="fromM2">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="fromAP2"  id="fromAP2">
+    <option value=" AM" selected>AM</option>
+    <option value=" PM">PM</option>
+</select>
+
+<label>to</label>
+<select name="toH2"  id="toH2">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="toM2"  id="toM2">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="toAP2"  id="toAP2">
+    <option value=" AM">AM</option>
+    <option value=" PM" selected>PM</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Non Work Day</span>
+
+
+<label><h2>Wednesday:</h2></label>
+<select name="from3"  id="from3">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9" selected>9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="from3"  id="from3">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="fromAP3"  id="fromAP3">
+    <option value=" AM" selected>AM</option>
+    <option value=" PM">PM</option>
+</select>
+
+<label>to</label>
+<select name="toH3"  id="toH3">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="toM3"  id="toM3">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="toAP3"  id="toAP3">
+    <option value=" AM">AM</option>
+    <option value=" PM" selected>PM</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Non Work Day</span></font>
+
+<label><h2>Thursday:</h2></label>
+<select name="from4"  id="from4">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9" selected>9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="fromM4"  id="fromM4">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="fromAP4"  id="fromAP4">
+    <option value=" AM" selected>AM</option>
+    <option value=" PM">PM</option>
+</select>
+
+<label>to</label>
+<select name="toH4"  id="toH4">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="toM4"  id="toM4">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="toAP4"  id="toAP4">
+    <option value=" AM">AM</option>
+    <option value=" PM" selected>PM</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Non Work Day</span></font>
+
+<label><h2>Friday:</h2></label>
+<select name="from5"  id="from5">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9" selected>9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="fromM5"  id="fromM5">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="fromAP5"  id="fromAP5">
+    <option value=" AM" selected>AM</option>
+    <option value=" PM">PM</option>
+</select>
+
+<label>to</label>
+<select name="toH5"  id="toH5">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="toM5"  id="toM5">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="toAP5"  id="toAP5">
+    <option value=" AM">AM</option>
+    <option value=" PM" selected>PM</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Non Work Day</span></font>
+
+<label><h2>Saturday:</h2></label>
+<select name="from6"  id="from6">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9" selected>9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="fromM6"  id="fromM6">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="fromAP6"  id="fromAP6">
+    <option value=" AM" selected>AM</option>
+    <option value=" PM">PM</option>
+</select>
+
+<!--Working days and hours of a doctor-->
+<label>to</label>
+<select name="toH6"  id="toH6">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5" selected>5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+</select>
+<select name="toM6"  id="toM6">
+    <option value=":00" selected>:00</option>
+    <option value=":15">:15</option>
+    <option value=":30">:30</option>
+    <option value=":45">:45</option>
+</select>
+<select name="toAP6"  id="toAP6">
+    <option value=" AM">AM</option>
+    <option value=" PM" selected>PM</option>
+</select>
+<input type="checkbox" name="closed" value="closed">
+<font size="-1"><span>Non Work Day</span></font>
+
+
+
+    <div class="boxes">
+        <input type="submit" value="Sign Up">
+    </div>
+    </form>
+    
+
+    <% 
+        if(typeof errors !== "undefined") {
+            errors.forEach((error) => {
+    %>
+                <div style="color: red"> <%= errors%></div>
+    <%
+            })
+        }
+    %>
+    </div>
+</body>
+
