@@ -12,7 +12,7 @@ function AuthMiddleware (req, res, next) {
 
 class Model {
     static async readFile(fileName) {
-        const modelsBuffer = await fs.readFile(path.join(__dirname, `../dbs/${fileName}`));
+        const modelsBuffer = await fs.readFile(path.join(__dirname, `./dbs/${fileName}`));
         const modelsJson = modelsBuffer.toString();
 
         if (!modelsJson) {
@@ -31,7 +31,7 @@ class Model {
         obj.id = objects.length + 1;
         objects.push(obj);
 
-        await fs.writeFile(path.join(__dirname, `../dbs/${fileName}`), JSON.stringify(objects));
+        await fs.writeFile(path.join(__dirname, `./dbs/${fileName}`), JSON.stringify(objects));
     }
 }
 

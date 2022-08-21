@@ -3,7 +3,6 @@ const path = require("path");
 const authRouter = require("./routes/auth_router");
 const appRouter = require("./routes/app_router");
 const cookieParser = require("cookie-parser");
-const fs = require("fs/promises");
 const session = require("express-session");
 
 const expressLayouts = require("express-ejs-layouts");
