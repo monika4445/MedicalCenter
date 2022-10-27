@@ -50,6 +50,4 @@
             border: #000;
             margin-left: 160px;
         }
-        .center .boxes:hover [type="submit"] {
-            background: linear-gradient(50deg, #a8c7f7, rgb(71, 158, 245));
-        }
+      

@@ -13,7 +13,7 @@ const app = express();
 
 
 app.set("view engine", "ejs");
-app.set("layout", "./layouts/main");
+app.set("layout", "./layouts/main-layout");
 app.set("views", path.resolve("views"));
 
 app.use(express.json());
