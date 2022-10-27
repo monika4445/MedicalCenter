@@ -1,11 +1,21 @@
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medical center online registration system </title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
 <body>
-    <section class="doctors" id="doctors">
+    <section class="patients" id="patients">
     <div class="box-container"></div>
 
     <div> <h1> <%= data %> </h1></div>
 
 <% 
-    if(patient) {
+    if(patient.length > 0) {
         patient.forEach((pt) => {
         if(pt !== "undefined"){
 %>
