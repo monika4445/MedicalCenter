@@ -9,7 +9,7 @@ function login(req, res, next) {
         const err = AppError.internalError("Error: Body doesn't exist.");
         return appErrorHandler(err, req, res, next);
     }
-    return res.render("login", {layout: "./layouts/auth-layouts"});
+    return res.render("login", {layout: "./layouts/main-layout"});
 };
 
 function logout(req, res){
@@ -60,7 +60,7 @@ function register(req, res) {
         return appErrorHandler(err, req, res, next);
     }
 
-    return res.render("register", { layout : "./layouts/auth-layouts"});
+    return res.render("register", { layout : "./layouts/main-layout"});
 };
 
 async function registerPost(req, res) {

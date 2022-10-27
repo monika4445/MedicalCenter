@@ -6,14 +6,14 @@ const mainRouter = require("./routes/main_router");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
-const expressLayouts = require("express-ejs-layouts");
+// const expressLayouts = require("express-ejs-layouts");
 //const appErrorHandler = require("./errors/app_error_handler");
 
 const app = express();
 
 
 app.set("view engine", "ejs");
-app.set("layout", "./layouts/main-layout");
+// app.set("layout", "./layouts/main");
 app.set("views", path.resolve("views"));
 
 app.use(express.json());
@@ -25,7 +25,7 @@ app.use(session({
     saveUninitialized:true,
     resave: false 
 }));
-app.use(expressLayouts);
+// app.use(expressLayouts);
 
 app.use("/", mainRouter);
 app.use("/auth", authRouter);
