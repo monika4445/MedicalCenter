@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 let mailTransporter = nodemailer.createTransport({
 service: "gmail",
 auth: {
-   user: "monika.zaqaryan2002@gmail.com",
+   user: "monika.zaqaryan2002@gmail.com",//?
    pass: "qsjfffxzyzwunmgy"
 },
 tls: {
@@ -13,7 +13,7 @@ tls: {
 });
  
 let details = {
-   from: "monika.zaqaryan2002@gmail.com",
+   from: "monika.zaqaryan2002@gmail.com",// ?
    to: "monikazaqaryan55@gmail.com", //req.body.email
    subject: "You booked appointment successfully!",
    text: "Congrats! You booked appointment successfully! We will wait for you at your check-in time.",
