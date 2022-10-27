@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const authRouter = require("./routes/auth_router");
 const appRouter = require("./routes/app_router");
+const mainRouter = require("./routes/main_router");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
@@ -26,6 +27,7 @@ app.use(session({
 }));
 app.use(expressLayouts);
 
+app.use("/", mainRouter);
 app.use("/auth", authRouter);
 app.use("/app", appRouter);
 

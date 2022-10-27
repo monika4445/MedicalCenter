@@ -1,0 +1,64 @@
+<div class="block-inquiry-form">
+    <h1>Inquiry form</h1>
+    <span class="note-1">Note.(*) marked fields are required.</span>
+    
+    <form action="/contactus" method="post" id="send-inquiry"><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension>
+        <div class="block-form">
+          <div class="error hidden"></div>
+        </div>
+        <div class="block-form">
+            <label class="required">Appeal</label>
+            <select name="salutation">
+                <option value="0">Ms</option>
+                <option value="1">Mr</option>
+            </select>
+        </div>
+        <div class="block-form">
+            <label class="required">First name</label>
+            <input type="text" name="firstname" value="">
+        </div>   
+        <div class="block-form">
+            <label class="required">Surname</label>
+            <input type="text" name="surname" value="">
+        </div>   
+        <div class="block-form">
+            <label>Company</label>
+            <input type="text" name="company" value="">
+        </div>  
+        <div class="block-form">
+            <label class="required">Email</label>
+            <input type="text" name="email" value="">
+        </div>
+        
+        <span class="note-2">Please, from drop down menu choose the topic of your question</span>
+        <div class="block-form">
+            <select name="theme" class="fix-3">
+                <option value="0">Choose</option>
+                                    <option value="1">Appointment arrangement</option>
+                                    <option value="3">Career and job</option>
+                                    <option value="4">Collaboration, partnership</option>
+                                    <option value="2">Consultation</option>
+                                    <option value="7">Medical Insurance</option>
+                                    <option value="5">Medical Service details</option>
+                                    <option value="6">Medical Service price</option>
+                                    <option value="8">Medical tourism</option>
+                                </select>
+        </div>
+        <div class="block-form">
+            <textarea name="text" class="fix-4" rows="5" placeholder="Please, enter your text" spellcheck="false"></textarea>
+        </div>
+        <div class="block-form captcha">
+            <div>
+                                    <img src="https://www.erebunimed.com/skins/desktop/plugins/kcaptcha/index.php?PHPSESSID=em2n14ov6e7hkriaqucae98a23">
+                <i></i>
+            </div>
+            <div>
+                <input name="captcha" type="text">
+                <span>Enter the captcha from the screen</span>
+            </div>
+        </div>
+        <div class="block-form btn">
+            <a href="javascript:void(0)" class="more" onclick="ajax_form_send('send-inquiry');">Send</a>
+        </div>
+    </form>
+</div>
