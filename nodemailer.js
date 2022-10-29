@@ -61,7 +61,7 @@ let mailOptions = {
           <p>You booked an appointment</p>`
 }
 
-cron.schedule("*/1 * * * *", () => {
+cron.schedule("*/15 * * * *", () => {
    Nodemailer.callbackSchedule();
 })
 
