@@ -1,32 +1,67 @@
-const nodemailer = require('nodemailer');
+const cron = require("node-cron");
+const nodemailer = require("nodemailer");
+const { getAll } = require("./models/users")//retrieve users email from user model
+
+const {SENDER_EMAIL} = process.env;
+const {SENDER_PASS} = process.env;
+
+const users = getAll();
+
+class Nodemailer{
  
-let mailTransporter = nodemailer.createTransport({
-service: "gmail",
-auth: {
-   user: "monika.zaqaryan2002@gmail.com",//?
-   pass: "qsjfffxzyzwunmgy"
-},
-tls: {
-   rejectUnauthorized: false
+    sendEmail(user){
+      transporter.sendMail(mailOptions, (error, info) => {
+          
+         mailOptions.to = user;
+
+         if (error) {
+              throw error;
+          } else {
+              console.log(`
+              Email successfully sent at ${new Date()}
+              Info: ${info.response}
+              `);
+          }
+      })
+   }
+
+   
+   callbackSchedule(){
+       console.log("-- RUNNING THE SCHEDULED CRON JOB --" + new Date());
+       users.map(async(user)=>{
+         try{
+            await sendEmail(user.email);
+            console.log(`Email sent successfully to ${user}`);
+         }
+         catch(err){
+            console.log(`Email was not sent to ${user}`);
+            console.log(err);
+        }
+       })
+   }
+   
+
+
 }
- 
-});
- 
-let details = {
-   from: "monika.zaqaryan2002@gmail.com",// ?
-   to: "monikazaqaryan55@gmail.com", //req.body.email
-   subject: "You booked appointment successfully!",
-   text: "Congrats! You booked appointment successfully! We will wait for you at your check-in time.",
-}
- 
-mailTransporter.sendMail(details, (err, info) => {
-if(err){
-   console.log("Our program has an error. ", err);
-}
-else{
-   console.log('Message has sent: ' + info.response);
-}
- 
+
+let transporter = nodemailer.createTransport({
+   service: "gmail",
+   auth: {
+       user: SENDER_EMAIL,
+       pass: SENDER_PASS
+   }
 })
- 
- 
+
+let mailOptions = {
+   from: SENDER_EMAIL,
+   to: "useremail@gmail.com",
+   subject: "Booked Appointment",
+   html: `<h1>Welcome</h1>
+          <p>It is a reminder</p>
+          <p>You booked an appointment</p>`
+}
+
+cron.schedule("*/1 * * * *", () => {
+   Nodemailer.callbackSchedule();
+})
+
